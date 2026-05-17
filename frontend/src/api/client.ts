@@ -2,7 +2,7 @@ import axios, { AxiosError, type AxiosRequestConfig } from 'axios'
 import { clearAuthSession, getAccessToken, getRefreshToken, saveAuthSession } from './tokenStore'
 import type { ApiResponse, AuthResponse } from './types'
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8081/api/v1'
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
 
 interface RetryableRequest extends AxiosRequestConfig {
   _retry?: boolean

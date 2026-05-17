@@ -11,6 +11,7 @@ dist/
 
 # Environment
 .env
+!frontend/.env
 
 # Logs
 *.log
